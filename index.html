@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Практическая работа - вёрстка страницы сайта инжинириума."
+    />
+    <meta
+      property="og:title"
+      content="Инжинириум МГТУ им. Н.Э. Баумана - Курсы для детей и школьников"
+    />
+    <meta
+      property="og:description"
+      content="Практическая работа - вёрстка страницы сайта инжинириума."
+    />
+    <meta property="og:image" content="./images/main.png" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="https://inginirium.ru/" />
+    <title>
+      Инжинириум МГТУ им. Н.Э. Баумана - Курсы для детей и школьников
+    </title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="page" id="page">
+    <header class="header">
+      <div class="header__start">
+        <div class="header__start-description">
+          <p class="header__start-text">
+            ЦЕНТР МОЛОДЕЖНОГО ИННОВАЦИОННОГО ТВОРЧЕСТВА И ТЕХНОПАРК
+          </p>
+          <p class="header__start-text">
+            Лицензия на осуществление образовательной деятельности № 040350 от
+            25.09.2019
+          </p>
+        </div>
+        <form class="header__start-form" method="post">
+          <select class="header__start__city-select" name="geocity">
+            <option class="option" value="mskm" selected="">Москва</option>
+          </select>
+        </form>
+        <button
+          class="header__button open-popup"
+          type="button"
+          data-toggle="modal"
+          data-target="#mainCTA"
+          onclick="openForm()"
+          id="btn"
+        >
+          Записаться
+        </button>
+      </div>
+      <div class="header__end">
+        <div class="header__end-picture">
+          <a class="header__end-link" href="https://inginirium.ru">
+            <img
+              class="header__end-image"
+              src="https://inginirium.ru/img/inginirium.png"
+              alt="Картинка инжинириум"
+            />
+          </a>
+        </div>
+        <nav class="header__end-menu">
+          <a href="https://inginirium.ru/about/" class="header__end-menu-item">О нас</a>
+          <a href="https://inginirium.ru/courses/" class="header__end-menu-item">Курсы</a>
+          <a href="https://inginirium.ru/master-classes/" class="header__end-menu-item">Мастер-классы</a>
+          <a href="https://inginirium.ru/technopark/" class="header__end-menu-item">Технопарки</a>
+          <a href="https://inginirium.ru/camps/" class="header__end-menu-item">Лагеря</a>
+          <a href="https://inginirium.ru/contacts/" class="header__end-menu-item">Контакты</a>
+          <a href="tel:+74951209975" class="header__end-menu-item"
+            >+7 (495) 120-99-75</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <section class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://inginirium.ru/course.php?cat=10">дошкольники</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://inginirium.ru/course.php?cat=1">1-4 класс</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://inginirium.ru/course.php?cat=2">5-8 класс</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://inginirium.ru/course.php?cat=3">9-11 класс</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://inginirium.ru/course.php?online=1">онлайн</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://inginirium.ru/schedule/">расписание</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://do.bmstu.ru/?utm_source=inginirium&utm_medium=link&utm_campaign=site">для взрослых</a>
+          </li>
+        </ul>
+      </section>
+      <section class="cards">
+        <ul class="card__list">
+          <li class="card__list-item">
+            <a class="card__list-link" href="https://inginirium.ru/courses/young-engineer-course-young">
+              <article class="card">
+                <div class="card__start">
+                  <img
+                    class="card__image"
+                    src="https://inginirium.ru/files/course/%D0%9A%D0%A3%D0%A0%D0%A1-%D0%AE%D0%9D%D0%9E%D0%93%D0%9E-%D0%98%D0%9D%D0%96%D0%95%D0%9D%D0%95%D0%A0%D0%90.png"
+                  />
+                  <h2 class="card__title">Курс юного инженера</h2>
+                </div>
+                <div class="card__description">
+                  <p class="card__text">Дошкольники</p>
+                  <p class="card__price">2100 р/занятие</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="card__list-item">
+            <a class="card__list-link" href="https://inginirium.ru/courses/computer-literacy-1-4">
+              <article class="card">
+                <div class="card__start">
+                  <img
+                    class="card__image"
+                    src="https://inginirium.ru/files/course/kjhkjhk324.png"
+                  />
+                  <h2 class="card__title">
+                    Основы компьютерной грамотности (1-4 класс)
+                  </h2>
+                </div>
+                <div class="card__description">
+                  <p class="card__text">1 - 4 классы</p>
+                  <p class="card__price">2100 р/занятие</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="card__list-item">
+            <a class="card__list-link" href="https://inginirium.ru/courses/3d-game-design-5-8">
+              <article class="card">
+                <div class="card__start">
+                  <img
+                    class="card__image"
+                    src="https://inginirium.ru/files/course/gamedev09485094375.png"
+                  />
+                  <h2 class="card__title">Геймдизайн в 3D (5-8 класс)</h2>
+                </div>
+                <div class="card__description">
+                  <p class="card__text">5 - 8 классы</p>
+                  <p class="card__price">2100 р/занятие</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="card__list-item">
+            <a class="card__list-link" href="https://inginirium.ru/courses/game-development-5-8">
+              <article class="card">
+                <div class="card__start">
+                  <img
+                    class="card__image"
+                    src="https://inginirium.ru/files/course/gamedev09485094375.png"
+                  />
+                  <h2 class="card__title">Геймдизайн (5-8 класс)</h2>
+                </div>
+                <div class="card__description">
+                  <p class="card__text">5 - 8 классы</p>
+                  <p class="card__price">2100 р/занятие</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="card__list-item">
+            <a class="card__list-link" href="https://inginirium.ru/courses/big-data-9-11">
+              <article class="card">
+                <div class="card__start">
+                  <img
+                    class="card__image"
+                    src="https://inginirium.ru/files/course/kjhsdlkfjhdslkfjhsdfasdfeaef.png"
+                  />
+                  <h2 class="card__title">Большие данные (9-11 класс)</h2>
+                </div>
+                <div class="card__description">
+                  <p class="card__text">9 - 11 классы</p>
+                  <p class="card__price">2100 р/занятие</p>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="card__list-item">
+            <a class="card__list-link" href="https://inginirium.ru/courses/artificial-intelligence-9-11">
+              <article class="card">
+                <div class="card__start">
+                  <img
+                    class="card__image"
+                    src="https://inginirium.ru/files/course/kjhsdlkfjhdslkfjhsdfasdfeaef.png"
+                  />
+                  <h2 class="card__title">
+                    Нейронные сети и технологии искусственного интеллекта (9-11
+                    класс)
+                  </h2>
+                </div>
+                <div class="card__description">
+                  <p class="card__text">9 - 11 классы</p>
+                  <p class="card__price">2100 р/занятие</p>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="connection">
+        <div class="connection__image"></div>
+        <div class="connection__form">
+          <h3 class="connection__title">
+            Поможем выбрать <br />
+            подходящий курс за 5 минут
+          </h3>
+          <form class="form" action="">
+            <label class="visually-hidden" for="tel">Номер телефона</label>
+            <input
+              class="input"
+              type="tel"
+              placeholder="Номер телефона *"
+              id="tel"
+            />
+
+            <label class="visually-hidden" for="first-name">Имя</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="Введите имя"
+              id="first-name"
+            />
+            <button type="submit" class="form__button">Позвонить</button>
+          </form>
+
+          <div class="connection__description">
+            Нажимая на кнопку "Позвонить", вы принимаете
+            <a
+              class="connection__link"
+              href="https://inginirium.ru/userconsent/"
+              >"Согласие на обработку персональных данных"</a
+            >
+            и подтверждаете, что ознакомлены с
+            <a class="connection__link" href="https://inginirium.ru/policy/"
+              >"Политикой конфиденциальности"</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="popup-bg" id="popup-bg">
+      <div class="form-popup" >
+        <form action="#" class="form-container">
+          <h1 class="form-popup__title">Запишем на курсы и ответим на любые Ваши вопросы</h1>
+
+          <label class="visually-hidden" for="name">Имя</label>
+          <input class="popup-form__input" type="text" placeholder="Ваше имя" name="name" id="name" required>
+
+          <label class="visually-hidden" for="popup-tel">Телефон</label>
+          <input class="popup-form__input" type="tel" placeholder="Телефон *" name="tel" id="popup-tel" required>
+
+          <label class="visually-hidden" for="email">Е-мейл</label>
+          <input class="popup-form__input" type="email" placeholder="E-mail" name="email" id="email" required>
+
+          <label class="visually-hidden" for="comment">Комментарий</label>
+          <input class="popup-form__input textarea" type="textarea" placeholder="Комментарий" name="textarea" id="comment">
+
+          <button type="submit" class="form-popup__button">Отправить</button>
+        </form>
+        <div class="connection__description cd_center">
+          Нажимая на кнопку "Позвонить", вы принимаете
+          <a
+            class="connection__link"
+            href="https://inginirium.ru/userconsent/"
+            >"Согласие на обработку персональных данных"</a
+          >
+          и подтверждаете, что ознакомлены с
+          <a class="connection__link" href="https://inginirium.ru/policy/"
+            >"Политикой конфиденциальности"</a
+          >
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__start">
+        <img
+          class="footer__start-image"
+          alt="Инжинириум МГТУ им. Н.Э.Баумана"
+          src="https://inginirium.ru/img/logo_small.png"
+        />
+        <p class="footer__start-copyright">Все права защищены</p>
+      </div>
+      <div class="footer__end">
+        <div class="footer__end-menu">
+          <div class="footer__end-menu-left">
+            <a
+              class="footer__end-menu-link"
+              href="https://inginirium.ru/branches/"
+              >ФИЛИАЛЫ</a
+            >
+            <a class="footer__end-menu-link" href="https://inginirium.ru/camps/"
+              >ЛАГЕРЯ</a
+            >
+          </div>
+          <div class="footer__end-menu-center">
+            <a class="footer__end-menu-link" href="https://inginirium.ru/docs/"
+              >ДОКУМЕНТЫ</a
+            >
+            <a
+              class="footer__end-menu-link"
+              href="https://inginirium.ru/franchise/"
+              >ФРАНШИЗА</a
+            >
+          </div>
+          <div class="footer__end-menu-right">
+            <a
+              class="footer__end-menu-link"
+              href="https://inginirium.ru/contacts/"
+              >КОНТАКТЫ</a
+            >
+            <div class="footer__menu-other">
+            Телефон:
+            <a class="footer__post" href="tel:+74951209975">+7 (495) 120-99-75</a>
+          </div>
+          <div class="footer__menu-other">
+            Для СМИ:
+            <a class="footer__post" href="mailto:press@emtc.ru"
+              >press@emtc.ru</a
+            >
+          </div>
+<p class="footer__menu-other">
+            Хотите работать у нас? </p>
+            <a class="footer__post" href="mailto:a@inginirium.ru"
+              >a@inginirium.ru</a
+            >
+          </div>
+        </div>
+        <div class="footer__icon">
+          <a href="https://vk.com/inginirium">
+            <img class="footer__icon-image" alt="ВКонтакте" src="https://inginirium.ru/img/vk_logo.svg">
+          </a>
+          <a href="https://www.youtube.com/channel/UCBx0xw9L-vvIkiNeCWrP75Q">
+            <img class="footer__icon-image" alt="YouTube" src="https://inginirium.ru/img/yt.png">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="actions.js"></script> 
+</html>

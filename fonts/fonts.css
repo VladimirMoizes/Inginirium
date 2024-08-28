@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(./Montserrat-Regular.ttf) format("TrueType");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(./Montserrat-Bold.ttf) format("TrueType");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(./Montserrat-Bold.ttf) format("TrueType");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PFAgoraSlabPro', sans-serif;
+  src: url(./pfagoraslabpro-regular.ttf) format("TrueType");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'Montserrat', 'sans-serif';
+  src: url(./Montserrat-Italic-VariableFont_wght.ttf) format("TrueType");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat', 'sans-serif';
+  src: url(./Montserrat-Italic-VariableFont_wght.ttf) format("TrueType");
+  font-weight: 700;
+  font-display: swap;
+} */
